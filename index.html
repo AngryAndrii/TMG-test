@@ -4,6 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Rest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header></header>
+    <main>
+      <section class="modal-form-section">
+        <div class="logo visually-hidden"></div>
+        <h1 class="title-h1">
+          <span class="h1-span">Sign Up </span>and find the best place to rest
+          while traveling
+        </h1>
+        <form action="main-form">
+          <div class="form-elements">
+            <div class="input-element">
+              <input type="text" name="first-name" placeholder="First Name" />
+              <svg width="24px" height="24px" class="input-svg">
+                <use href="./images/symbol-defs.svg#user"></use>
+              </svg>
+            </div>
+            <div class="input-element">
+              <input type="text" name="second-name" placeholder="Second Name" />
+              <svg width="24px" height="24px" class="input-svg">
+                <use href="./images/symbol-defs.svg#users"></use>
+              </svg>
+            </div>
+            <div class="input-element">
+              <select
+                name="country"
+                id="contry-select"
+                class="country-select"
+                required
+              >
+                <option value="" disabled selected>Country</option>
+                <option class="option-item" value="Afghanistan">
+                  Afghanistan
+                </option>
+                <option class="option-item" value="Albania">Albania</option>
+                <option class="option-item" value="Algeria">Algeria</option>
+                <option class="option-item" value="Andorra">Andorra</option>
+              </select>
+              <svg width="24px" height="24px" class="input-svg">
+                <use href="./images/symbol-defs.svg#map"></use>
+              </svg>
+            </div>
+            <div class="input-element">
+              <input type="tel" placeholder="Phone" />
+              <svg width="24px" height="24px" class="input-svg">
+                <use href="./images/symbol-defs.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="input-element">
+              <input type="password" placeholder="password" />
+              <svg width="24px" height="24px" class="input-svg">
+                <use href="./images/symbol-defs.svg#padlock"></use>
+              </svg>
+            </div>
+            <div class="input-element">
+              <input type="password" placeholder="Confirm password" />
+              <svg width="24px" height="24px" class="input-svg">
+                <use href="./images/symbol-defs.svg#padlocks"></use>
+              </svg>
+            </div>
+            <div class="input-element">
+              <input type="email" placeholder="Email" />
+              <svg width="24px" height="24px" class="input-svg">
+                <use href="./images/symbol-defs.svg#mail"></use>
+              </svg>
+            </div>
+            <div class="checkbox-element">
+              <input type="checkbox" name="user-policy" id="user-policy" />
+              <label class="user-policy-label" for="user-policy"
+                >I agree to the
+                <span class="user-policy-span">Terms & Conditions</span></label
+              >
+            </div>
+            <div class="confirm-button">
+              <button type="submit">Sign Up</button>
+            </div>
+            <div class="form-footer">
+              <p>
+                If you have an account,
+                <span class="form-footer-span">Log In</span>
+              </p>
+            </div>
+          </div>
+        </form>
+        <svg width="60px" height="84px" class="back-svg-1 absolute">
+          <use href="./images/symbol-defs.svg#tr1"></use>
+        </svg>
+        <svg width="114px" height="91px" class="back-svg-2 absolute">
+          <use href="./images/symbol-defs.svg#tr2"></use>
+        </svg>
+        <svg width="107px" height="107px" class="back-svg-3 absolute">
+          <use href="./images/symbol-defs.svg#tr3"></use>
+        </svg>
+      </section>
+    </main>
+  </body>
 </html>
