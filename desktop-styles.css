@@ -1,0 +1,57 @@
+@media screen and (min-width: 660px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .title-h1 {
+        padding-bottom: 50px;
+    }
+
+    .modal-form-section {
+        width: 100vw;
+        height: auto;
+    }
+
+    form {
+        width: 630px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .flex-elem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .input-element {
+        max-width: 300px;
+        width: 300px;
+        margin-top: 0;
+    }
+
+    .checkbox-element {
+        display: flex;
+    }
+
+    .user-policy-label {
+        margin-top: 0px;
+    }
+
+    .confirm-button {
+        width: 165px;
+        height: 56px;
+        margin: 30px 0 0 0;
+    }
+
+    .confirm-button > button {
+        margin: 0;
+    }
+
+    .back-svg {
+        display: none;
+    }
+}

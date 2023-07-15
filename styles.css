@@ -74,12 +74,16 @@ input {
     position: relative;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(./images/bg-cover.jpg), lightgray -942.09px -0.014px / 580.658% 113.952% no-repeat;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 360px;
     height: 1054px;
     margin: 0 auto;
     padding: 100px 15px 56px 15px;
     overflow: hidden;
+}
+
+.logo {
+    display: none;
 }
 
 .title-h1 {
