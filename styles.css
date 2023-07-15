@@ -44,6 +44,7 @@ p {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 body {
@@ -72,6 +73,8 @@ input {
 .modal-form-section {
     position: relative;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(./images/bg-cover.jpg), lightgray -942.09px -0.014px / 580.658% 113.952% no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 360px;
     height: 1054px;
     margin: 0 auto;
@@ -185,4 +188,40 @@ input::placeholder {
 .back-svg-3 {
     bottom: 0px;
     right: 0px;
+}
+
+/* checkbox */
+
+.user-policy-input {
+    height: 0px;
+    border: none;
+}
+
+.user-policy-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #67D9B7;
+}
+
+.user-policy-input:checked + .checkbox {
+    background-color: #67D9B7;
+    background-image: url("./images/vector.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.agree-p {
+    padding-left: 11px;
+    color: #E0E0E0;
+}
+
+.form-footer {
+    text-align: center;
 }
