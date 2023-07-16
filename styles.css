@@ -244,7 +244,7 @@ input::placeholder {
 
 .user-policy-input:checked + .checkbox {
     background-color: #67D9B7;
-    background-image: url('../images/vector.svg');
+    background-image: url('../images/Vector.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
