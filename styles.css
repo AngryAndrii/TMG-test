@@ -8,6 +8,7 @@
     --secondary-color: #6CEEC7;
     --duration: 250ms;
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-duration: 0.3s;
 }
 
 /* general styles */
@@ -70,6 +71,7 @@ input {
 }
 
 /* --------------------------- */
+
 .modal-form-section {
     position: relative;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(./images/bg-cover.jpg), lightgray -942.09px -0.014px / 580.658% 113.952% no-repeat;
@@ -110,7 +112,7 @@ input {
 input, select {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0);
     border: 1px solid var(--primary-grey-color);
     border-radius: 5px;
 }
@@ -143,6 +145,30 @@ input::placeholder {
     left: 50px;
 }
 
+.form-label {
+    display: none;
+}
+
+.select-element .form-label {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    font-size: inherit;
+    font-weight: 300;
+    line-height: normal;
+    transform: translateY(-50%);
+    color: var(--primary-grey-color);
+}
+
+.input-element input {
+    color: var(--primary-grey-color);
+    font-size: inherit;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 50px;
+}
+
 .user-policy-label {
     margin-top: 41px;
 }
@@ -156,8 +182,11 @@ input::placeholder {
 }
 
 .user-policy-span, .form-footer-span {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--secondary-color);
     color: var(--secondary-color);
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 

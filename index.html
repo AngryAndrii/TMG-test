@@ -16,116 +16,133 @@
   <body>
     <header></header>
     <main>
-      <section class="modal-form-section">
-        <div class="logo">
-          <svg width="190px" height="48px" class="logo-svg">
-            <use href="./images/symbol-defs.svg#logo"></use>
-          </svg>
-        </div>
-        <h1 class="title-h1">
-          <span class="h1-span">Sign Up </span>and find the best place to rest
-          while traveling
-        </h1>
-        <form action="main-form">
-          <div class="form-elements">
-            <div class="flex-elem">
-              <div class="input-element">
-                <input type="text" name="first-name" placeholder="First Name" />
-                <svg width="24px" height="24px" class="input-svg">
-                  <use href="./images/symbol-defs.svg#user"></use>
-                </svg>
-              </div>
-              <div class="input-element">
-                <input
-                  type="text"
-                  name="second-name"
-                  placeholder="Second Name"
-                />
-                <svg width="24px" height="24px" class="input-svg">
-                  <use href="./images/symbol-defs.svg#users"></use>
-                </svg>
-              </div>
-              <div class="input-element">
-                <select
-                  name="country"
-                  id="contry-select"
-                  class="country-select"
-                  required
-                >
-                  <option value="" disabled selected>Country</option>
-                  <option class="option-item" value="Afghanistan">
-                    Afghanistan
-                  </option>
-                  <option class="option-item" value="Albania">Albania</option>
-                  <option class="option-item" value="Algeria">Algeria</option>
-                  <option class="option-item" value="Andorra">Andorra</option>
-                </select>
-                <svg width="24px" height="24px" class="input-svg">
-                  <use href="./images/symbol-defs.svg#map"></use>
-                </svg>
-              </div>
-              <div class="input-element">
-                <input type="tel" placeholder="Phone" />
-                <svg width="24px" height="24px" class="input-svg">
-                  <use href="./images/symbol-defs.svg#phone"></use>
-                </svg>
-              </div>
-              <div class="input-element">
-                <input type="password" placeholder="password" />
-                <svg width="24px" height="24px" class="input-svg">
-                  <use href="./images/symbol-defs.svg#padlock"></use>
-                </svg>
-              </div>
-              <div class="input-element">
-                <input type="password" placeholder="Confirm password" />
-                <svg width="24px" height="24px" class="input-svg">
-                  <use href="./images/symbol-defs.svg#padlocks"></use>
-                </svg>
-              </div>
-              <div class="input-element">
-                <input type="email" placeholder="Email" />
-                <svg width="24px" height="24px" class="input-svg">
-                  <use href="./images/symbol-defs.svg#mail"></use>
-                </svg>
-              </div>
-              <div class="checkbox-element">
-                <label class="user-policy-label"
-                  ><input
-                    type="checkbox"
-                    name="user-policy"
-                    class="user-policy-input absolute visually-hidden"
-                  />
-                  <span class="checkbox"></span>
-                  <p class="agree-p">
-                    I agree to the
-                    <span class="user-policy-span"
-                      ><a href="">Terms & Conditions</a></span
-                    >
-                  </p></label
-                >
-              </div>
-            </div>
-            <div class="confirm-button">
-              <button type="submit">Sign Up</button>
-            </div>
+      <div class="main-div">
+        <section class="modal-form-section">
+          <div class="logo">
+            <svg width="190px" height="48px" class="logo-svg">
+              <use href="./images/symbol-defs.svg#logo"></use>
+            </svg>
           </div>
-        </form>
-        <div class="form-footer">
-          <p>
-            If you have an account,
-            <span class="form-footer-span"><a href="">Log In</a></span>
-          </p>
-        </div>
-        <svg width="60px" height="84px" class="back-svg back-svg-1 absolute">
-          <use href="./images/symbol-defs.svg#tr1"></use>
-        </svg>
-        <svg width="114px" height="91px" class="back-svg back-svg-2 absolute">
-          <use href="./images/symbol-defs.svg#tr2"></use>
-        </svg>
-        <svg width="107px" height="107px" class="back-svg back-svg-3 absolute">
-          <use href="./images/symbol-defs.svg#tr3"></use>
-        </svg>
-      </section>
+          <h1 class="title-h1">
+            <span class="h1-span">Sign Up </span>and find the best place to rest
+            while traveling
+          </h1>
+          <form action="main-form">
+            <div class="form-elements">
+              <div class="flex-elem">
+                <div class="input-element">
+                  <input
+                    type="text"
+                    name="first-name"
+                    placeholder="First Name"
+                  />
+                  <label class="form-label absolute">First Name</label>
+                  <svg width="24px" height="24px" class="input-svg">
+                    <use href="./images/symbol-defs.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="input-element">
+                  <input
+                    type="text"
+                    name="second-name"
+                    placeholder="Second Name"
+                  />
+                  <label class="form-label absolute">Second Name</label>
+                  <svg width="24px" height="24px" class="input-svg">
+                    <use href="./images/symbol-defs.svg#users"></use>
+                  </svg>
+                </div>
+                <div class="input-element select-element">
+                  <select
+                    name="country"
+                    id="contry-select"
+                    class="country-select"
+                    required
+                  >
+                    <option value="" disabled selected></option>
+                    <option class="option-item" value="Afghanistan">
+                      Afghanistan
+                    </option>
+                    <option class="option-item" value="Albania">Albania</option>
+                    <option class="option-item" value="Algeria">Algeria</option>
+                    <option class="option-item" value="Andorra">Andorra</option>
+                  </select>
+                  <label class="form-label absolute">Country</label>
+                  <svg width="24px" height="24px" class="input-svg">
+                    <use href="./images/symbol-defs.svg#map"></use>
+                  </svg>
+                </div>
+                <div class="input-element">
+                  <input type="tel" placeholder="Phone" />
+                  <label class="form-label absolute">Phone</label>
+                  <svg width="24px" height="24px" class="input-svg">
+                    <use href="./images/symbol-defs.svg#phone"></use>
+                  </svg>
+                </div>
+                <div class="input-element">
+                  <input type="password" placeholder="password" />
+                  <label class="form-label absolute">password</label>
+                  <svg width="24px" height="24px" class="input-svg">
+                    <use href="./images/symbol-defs.svg#padlock"></use>
+                  </svg>
+                </div>
+                <div class="input-element">
+                  <input type="password" placeholder="Confirm password" />
+                  <label class="form-label absolute">Confirm password</label>
+                  <svg width="24px" height="24px" class="input-svg">
+                    <use href="./images/symbol-defs.svg#padlocks"></use>
+                  </svg>
+                </div>
+                <div class="input-element">
+                  <input type="email" placeholder="Email" />
+                  <label class="form-label absolute">Email</label>
+                  <svg width="24px" height="24px" class="input-svg">
+                    <use href="./images/symbol-defs.svg#mail"></use>
+                  </svg>
+                </div>
+                <div class="checkbox-element">
+                  <label class="user-policy-label"
+                    ><input
+                      type="checkbox"
+                      name="user-policy"
+                      class="user-policy-input absolute visually-hidden"
+                    />
+                    <span class="checkbox"></span>
+                    <p class="agree-p">
+                      I agree to the
+                      <span class="user-policy-span"
+                        ><a href="">Terms & Conditions</a></span
+                      >
+                    </p></label
+                  >
+                </div>
+              </div>
+              <div class="confirm-button">
+                <button type="submit">Sign Up</button>
+              </div>
+            </div>
+          </form>
+          <div class="form-footer">
+            <p>
+              If you have an account,
+              <span class="form-footer-span"><a href="">Log In</a></span>
+            </p>
+          </div>
+          <svg width="60px" height="84px" class="back-svg back-svg-1 absolute">
+            <use href="./images/symbol-defs.svg#tr1"></use>
+          </svg>
+          <svg width="114px" height="91px" class="back-svg back-svg-2 absolute">
+            <use href="./images/symbol-defs.svg#tr2"></use>
+          </svg>
+          <svg
+            width="107px"
+            height="107px"
+            class="back-svg back-svg-3 absolute"
+          >
+            <use href="./images/symbol-defs.svg#tr3"></use>
+          </svg>
+        </section>
+      </div>
     </main>
   </body>
 </html>
