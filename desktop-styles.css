@@ -90,7 +90,7 @@
         line-height: normal;
     }
 
-    input:focus {
+    input:focus, select:focus {
         outline: none;
         border: 1px solid var(--secondary-color);
     }
@@ -98,6 +98,15 @@
     input:hover, select:hover {
         border: 1px solid var(--secondary-color);
     }
+
+    /* class for select when country is selected */
+    /* .selected-country {
+        margin-top: -13px;
+        color: #67D9B7;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: normal;
+    } */
 
 /* --------------------------------------------------- */
 
